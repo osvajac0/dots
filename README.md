@@ -1,20 +1,22 @@
-# <p style="text-align:center;">Dotfiles</p>
+# <h1 align="center"> Dotfiles </h1>
 
 
-![Outcome](https://raw.githubusercontent.com/messi0887/Neptune/refs/heads/main/Preview.png)
+![banner](https://github.com/osvajac0/dots/blob/main/stuffs/banner.png)
 
 
-## <p style="text-align:center;">Preview</p>
+
+## <p align="center"> <b> Preview </b> </p>
 
 
-![Outcome](https://raw.githubusercontent.com/messi0887/Neptune/refs/heads/main/Preview.png)
 
-![Outcome](https://raw.githubusercontent.com/messi0887/Neptune/refs/heads/main/Preview.png)
+![showcase](https://github.com/osvajac0/dots/blob/main/showcase.gif)
 
-![Outcome](https://raw.githubusercontent.com/messi0887/Neptune/refs/heads/main/Preview.png)
+![screenshot](https://github.com/osvajac0/dots/blob/main/stuffs/preview1.png)
+
+![screenshot](https://github.com/osvajac0/dots/blob/main/stuffs/preview2.png)
 
 
-### <p style="text-align:center;">Instructions for Suckless utils</p>
+### <p align="center">Instructions for Suckless utilities</p>
 
 
 - Make sure you have installed all the dependencies 
@@ -27,7 +29,7 @@ sudo make clean install
 ```
 
 
-### <p style="text-align:center;">Instructions for picom</p>
+### <p align="center">Instructions for picom</p>
 
 
 Follow these steps to set up Picom:
@@ -86,7 +88,7 @@ cp ~/dots/config/picom/picom.conf ~/.config/picom
 ``` 
 
 
-### <p style="text-align:center;">Dunst and Neofetch</p>
+### <p align="center">Dunst and Neofetch</p>
 
 
 - Install the packages 
@@ -101,10 +103,10 @@ cp ~/dots/config/neofetch/config.conf ~/.config/neofetch
 ```
 
 
-## <p style="text-align:center;">Browser</p>
+# <p align="center">Browser</p>
 
 
-![Outcome](https://raw.githubusercontent.com/messi0887/Neptune/refs/heads/main/Preview.png)
+![browser](https://github.com/osvajac0/dots/blob/main/stuffs/browser.gif)
 
 
 <br>
