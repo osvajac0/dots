@@ -87,6 +87,11 @@ ninja -C build install
 cp ~/dots/config/picom/picom.conf ~/.config/picom
 ``` 
 
+### <p align="center">Apply shell configurations</p>
+
+```bash
+cp ~/dots/.bashrc ~
+```
 
 ### <p align="center">Dunst and Neofetch</p>
 
@@ -111,6 +116,48 @@ cp ~/dots/config/neofetch/config.conf ~/.config/neofetch
 
 <br>
 <p align="center"> <a href="https://github.com/osvajac0/Neptune">
+  <img src="https://github.com/vinceliuice/WhiteSur-gtk-theme/blob/pictures/pictures/download-button.svg"/>
+</a> </p>
+<br>
+
+
+# <p align="center">Fonts</p>
+
+
+### <p align="center">SF Pro Display</p>
+
+
+![SF Pro Display](https://github.com/osvajac0/dots/blob/main/fonts%20images/sfpro.jpg)
+
+
+<br>
+<p align="center"> <a href="https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts">
+  <img src="https://github.com/vinceliuice/WhiteSur-gtk-theme/blob/pictures/pictures/download-button.svg"/>
+</a> </p>
+<br>
+
+
+# <p align="center">SFMono Nerd Font</p>
+
+
+![SFMono Nerd Font](https://github.com/osvajac0/dots/blob/main/fonts%20images/sfmono.jpg)
+
+
+<br>
+<p align="center"> <a href="https://github.com/epk/SF-Mono-Nerd-Font">
+  <img src="https://github.com/vinceliuice/WhiteSur-gtk-theme/blob/pictures/pictures/download-button.svg"/>
+</a> </p>
+<br>
+
+
+# <p align="center">JetBrains Mono Nerd Font</p>
+
+
+![JetBrainsMono](https://github.com/osvajac0/dots/blob/main/fonts%20images/jet.png)
+
+
+<br>
+<p align="center"> <a href="https://www.jetbrains.com/lp/mono/">
   <img src="https://github.com/vinceliuice/WhiteSur-gtk-theme/blob/pictures/pictures/download-button.svg"/>
 </a> </p>
 <br>
