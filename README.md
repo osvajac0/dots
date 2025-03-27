@@ -127,7 +127,7 @@ cp ~/dots/config/neofetch/config.conf ~/.config/neofetch
 ### <p align="center">SF Pro Display</p>
 
 
-![SF Pro Display](https://github.com/osvajac0/dots/blob/main/fonts%20images/sfpro.jpg)
+<p align="center"> <img src="https://github.com/osvajac0/dots/blob/main/fonts%20images/sfpro.jpg"/> </p>
 
 
 <br>
@@ -140,7 +140,7 @@ cp ~/dots/config/neofetch/config.conf ~/.config/neofetch
 # <p align="center">SFMono Nerd Font</p>
 
 
-![SFMono Nerd Font](https://github.com/osvajac0/dots/blob/main/fonts%20images/sfmono.jpg)
+<p align="center"> <img src="https://github.com/osvajac0/dots/blob/main/fonts%20images/sfmono.jpg"/> </p>
 
 
 <br>
@@ -153,7 +153,7 @@ cp ~/dots/config/neofetch/config.conf ~/.config/neofetch
 # <p align="center">JetBrains Mono Nerd Font</p>
 
 
-![JetBrainsMono](https://github.com/osvajac0/dots/blob/main/fonts%20images/jet.png)
+<p align="center"> <img src="https://github.com/osvajac0/dots/blob/main/fonts%20images/jet.png"/> </p>
 
 
 <br>
