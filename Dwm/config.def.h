@@ -164,11 +164,11 @@ static void (*bartabmonfns[])(Monitor *) = { NULL /* , customlayoutfn */ };
 #endif // MONOCLE_LAYOUT
 #endif // BAR_TABGROUPS_PATCH
 #if BAR_PANGO_PATCH
-static const char font[]                 = "SF Pro Display 11";
+static const char font[]                 = "SF Pro Display 10.3:style=Bold";
 #else
-static const char *fonts[]               = { "SF Pro Display:size=11" };
+static const char *fonts[]               = { "SF Pro Display:size=10.3:style=Bold" };
 #endif // BAR_PANGO_PATCH
-static const char dmenufont[]            = "SF Pro Display:size=11";
+static const char dmenufont[]            = "SF Pro Display:size=10";
 
 static char c000000[]                    = "#000000"; // placeholder value
 
@@ -261,7 +261,7 @@ static char selfloatbgcolor[]            = "#117799";
 #endif // BAR_FLEXWINTITLE_PATCH
 
 #if BAR_ALPHA_PATCH
-static const unsigned int baralpha = 0xd0;
+static const unsigned int baralpha = OPAQUE;
 static const unsigned int borderalpha = OPAQUE;
 static const unsigned int alphas[][3] = {
 	/*                       fg      bg        border     */
@@ -416,7 +416,7 @@ static const char *const autostart[] = {
 	"~/.fehbh", "-c", NULL,
 	"slstatus", NULL,
 	"dunst", NULL,
-	"/home/otherwise-storm/mousepad", "-c", NULL,
+	"~/mousepad", "-c", NULL,
 	NULL /* terminate */
 };
 #endif // COOL_AUTOSTART_PATCH
@@ -464,7 +464,7 @@ static char tagicons[][NUMTAGS][MAX_TAGLEN] =
 static char *tagicons[][NUMTAGS] =
 #endif // NAMETAG_PATCH
 {
-	[DEFAULT_TAGS]        = { "1", "2", "3", "4", "5", "6", "7", "8", "9" },
+	[DEFAULT_TAGS]        = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" },
 	[ALTERNATIVE_TAGS]    = { "A", "B", "C", "D", "E", "F", "G", "H", "I" },
 	[ALT_TAGS_DECORATION] = { "<1>", "<2>", "<3>", "<4>", "<5>", "<6>", "<7>", "<8>", "<9>" },
 };
@@ -573,16 +573,16 @@ static const BarRule barrules[] = {
 	{ -1,        0,     BAR_ALIGN_LEFT,   width_tags,               draw_tags,              click_tags,              hover_tags,              "tags" },
 	#endif // BAR_TAGS_PATCH
 	#if BAR_TAGLABELS_PATCH
-	{ -1,        0,     BAR_ALIGN_LEFT,   width_taglabels,          draw_taglabels,         click_taglabels,         hover_taglabels,         "taglabels" },
+	{ -1,        0,     BAR_ALIGN_CENTER,   width_taglabels,          draw_taglabels,         click_taglabels,         hover_taglabels,         "taglabels" },
 	#endif // BAR_TAGLABELS_PATCH
 	#if BAR_TAGGRID_PATCH
 	{ -1,        0,     BAR_ALIGN_LEFT,   width_taggrid,            draw_taggrid,           click_taggrid,           NULL,                    "taggrid" },
 	#endif // BAR_TAGGRID_PATCH
 	#if BAR_SYSTRAY_PATCH
-	{  0,        0,     BAR_ALIGN_RIGHT,  width_systray,            draw_systray,           click_systray,           NULL,                    "systray" },
+	{  0,        0,     BAR_ALIGN_RIGHT_RIGHT,  width_systray,            draw_systray,           click_systray,           NULL,                    "systray" },
 	#endif // BAR_SYSTRAY_PATCH
 	#if BAR_LTSYMBOL_PATCH
-	{ -1,        0,     BAR_ALIGN_LEFT,   width_ltsymbol,           draw_ltsymbol,          click_ltsymbol,          NULL,                    "layout" },
+	{ -1,        0,     BAR_ALIGN_RIGHT_LEFT,   width_ltsymbol,           draw_ltsymbol,          click_ltsymbol,          NULL,                    "layout" },
 	#endif // BAR_LTSYMBOL_PATCH
 	#if BAR_STATUSCOLORS_PATCH && BAR_STATUSCMD_PATCH
 	{ statusmon, 0,     BAR_ALIGN_RIGHT,  width_statuscolors,       draw_statuscolors,      click_statuscmd,         NULL,                    "statuscolors" },
@@ -595,12 +595,12 @@ static const BarRule barrules[] = {
 	#elif BAR_POWERLINE_STATUS_PATCH
 	{ statusmon, 0,     BAR_ALIGN_RIGHT,  width_pwrl_status,        draw_pwrl_status,       click_pwrl_status,       NULL,                    "powerline_status" },
 	#elif BAR_STATUS_PATCH && BAR_STATUSCMD_PATCH
-	{ statusmon, 0,     BAR_ALIGN_RIGHT,  width_status,             draw_status,            click_statuscmd,         NULL,                    "status" },
+	{ statusmon, 0,     BAR_ALIGN_RIGHT_RIGHT,  width_status,             draw_status,            click_statuscmd,         NULL,                    "status" },
 	#elif BAR_STATUS_PATCH
-	{ statusmon, 0,     BAR_ALIGN_RIGHT,  width_status,             draw_status,            click_status,            NULL,                    "status" },
+	{ statusmon, 0,     BAR_ALIGN_RIGHT_RIGHT,  width_status,             draw_status,            click_status,            NULL,                    "status" },
 	#endif // BAR_STATUS2D_PATCH | BAR_STATUSCMD_PATCH
 	#if XKB_PATCH
-	{  0,        0,     BAR_ALIGN_RIGHT,  width_xkb,                draw_xkb,               click_xkb,               NULL,                    "xkb" },
+	{  0,        0,     BAR_ALIGN_RIGHT_RIGHT,  width_xkb,                draw_xkb,               click_xkb,               NULL,                    "xkb" },
 	#endif // XKB_PATCH
 	#if BAR_FLEXWINTITLE_PATCH
 	{ -1,        0,     BAR_ALIGN_NONE,   width_flexwintitle,       draw_flexwintitle,      click_flexwintitle,      NULL,                    "flexwintitle" },
@@ -782,7 +782,7 @@ static const Layout layouts[] = {
 /* xkb frontend */
 static const char *xkb_layouts[]  = {
 	"en",
-	"ru",
+	"ar",
 };
 #endif // XKB_PATCH
 
@@ -884,7 +884,14 @@ static const char *dmenucmd[] = {
 	#endif // BAR_DMENUMATCHTOP_PATCH
 	NULL
 };
-static const char *termcmd[]  = { "st", NULL };
+
+#include <X11/XF86keysym.h>
+
+static const char *prtscrcmd[] = { "flameshot", "gui", NULL};
+static const char *termcmd[]  = { "kitty", NULL };
+static const char *mutecmd[] = { "pactl", "set-sink-mute", "0", "toggle", NULL };
+static const char *volupcmd[] = { "pactl", "set-sink-volume", "0", "+5%", NULL };
+static const char *voldowncmd[] = { "pactl", "set-sink-volume", "0", "-5%", NULL };
 
 #if BAR_STATUSCMD_PATCH
 #if BAR_DWMBLOCKS_PATCH
@@ -1419,6 +1426,11 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                                  6)
 	TAGKEYS(                        XK_8,                                  7)
 	TAGKEYS(                        XK_9,                                  8)
+	{ 0, XF86XK_AudioMute, spawn, {.v = mutecmd } },
+	{ 0, XF86XK_AudioLowerVolume, spawn, {.v = voldowncmd } },
+	{ 0, XF86XK_AudioRaiseVolume, spawn, {.v = volupcmd } },
+	{ 0,			        XK_Print,  spawn,	   {.v = prtscrcmd } },
+	{ Mod4Mask, XK_space, spawn, SHCMD("setxkbmap us,iq -option grp:win_space_toggle") },
 };
 
 #if KEYMODES_PATCH
