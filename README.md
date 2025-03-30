@@ -93,17 +93,18 @@ cp ~/dots/config/picom/picom.conf ~/.config/picom
 cp ~/dots/.bashrc ~
 ```
 
-### <p align="center">Dunst and Neofetch</p>
+### <p align="center">Dunst and Neofetch and Kitty</p>
 
 
 - Install the packages 
 ```bash
-sudo pacman -S neofetch dunst
+sudo pacman -S neofetch dunst kitty
 ```
 
 - Apply the configurations.
 ```bash
 cp ~/dots/config/dunst/dunstrc ~/.config/dunst/
+cp ~/dots/kitty/kitty.conf ~/.config/kitty/
 cp ~/dots/config/neofetch/config.conf ~/.config/neofetch
 ```
 
