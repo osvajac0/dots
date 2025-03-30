@@ -207,8 +207,8 @@ static char hidselfgcolor[]              = "#eeeeee";
 static char hidnormbgcolor[]             = "#151515";
 static char hidselbgcolor[]              = "#151515";
 
-static char urgfgcolor[]                 = "#bbbbbb";
-static char urgbgcolor[]                 = "#222222";
+static char urgfgcolor[]                 = "#eeeeee";
+static char urgbgcolor[]                 = "#0f0f0f";
 static char urgbordercolor[]             = "#ff0000";
 static char urgfloatcolor[]              = "#db8fd9";
 
